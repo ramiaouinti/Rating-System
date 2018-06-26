@@ -1,0 +1,127 @@
+AppBundle\Entity\Country:
+    attributes:
+        id:
+            groups: ['country', 'federal','district','province','municipality','datacountry']
+        name:
+            groups: ['country', 'federal','district','province','municipality','datacountry']
+        area:
+            groups: ['country', 'federal','district','province','municipality','datacountry']
+        lat:
+            groups: ['country', 'federal','district','province','municipality','datacountry']
+        long:
+            groups: ['country', 'federal','district','province','municipality','datacountry']       
+        
+
+AppBundle\Entity\Federal:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']    
+        country:
+            groups: ['federal']
+
+
+
+AppBundle\Entity\Province:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']    
+        country:
+            groups: ['federal']
+
+
+AppBundle\Entity\District:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']    
+        country:
+            groups: ['federal']
+
+
+AppBundle\Entity\Municipality:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']    
+        country:
+            groups: ['federal']
+
+
+
+
+
+AppBundle\Entity\Theme:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']    
+        country:
+            groups: ['federal']
+
+
+
+
+AppBundle\Entity\Date:
+    attributes:
+        id:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']
+        country:
+            groups: ['federal']
+
+AppBundle\Entity\User:
+    attributes:
+        id:
+            groups: ['user', 'preference', 'auth-token']
+        firstname:
+            groups: ['user', 'preference', 'auth-token']
+        lastname:
+            groups: ['user', 'preference', 'auth-token']
+        email:
+            groups: ['user', 'preference', 'auth-token']
+        preferences:
+            groups: ['user']
+
+AppBundle\Entity\AuthToken:
+    attributes:
+        id:
+            groups: ['auth-token']
+        value:
+            groups: ['auth-token']
+        createdAt:
+            groups: ['auth-token']
+        user:
+            groups: ['auth-token']
+

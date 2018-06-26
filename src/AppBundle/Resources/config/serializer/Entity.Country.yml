@@ -1,0 +1,14 @@
+AppBundle\Entity\Country:
+ 
+    exclusion_policy: none
+    properties:
+        id:
+            groups: ['country', 'federal']
+        name:
+            groups: ['country', 'federal']
+        area:
+            groups: ['country', 'federal']
+        lat:
+            groups: ['country', 'federal']
+        long:
+            groups: ['country', 'federal']     
